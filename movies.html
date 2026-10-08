@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>热门电影 · 最终幻想7</title>
+  <meta name="description" content="热门电影页面说明：未接入 TMDB。">
+  <link rel="icon" href="images/tb.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="images/tb.jpg" alt="">最终幻想7</a>
+    <nav aria-label="主导航"><a href="index.html">首页</a><a href="intro.html">游戏简介</a><a href="roles.html">角色设定</a><a href="actors.html">角色背景</a><a href="reviews.html">游戏评价</a><a href="movies.html" aria-current="page">热门电影</a></nav>
+  </div>
+</header>
+
+<main id="main"><div class="wrap">
+  <h1 class="page-title">热门电影（TMDB）</h1>
+  <p class="callout">应用里这一页会用 TMDB 拉取热门电影和搜索结果。这个网站没有接上实时数据，因为密钥不能公开，仓库里也不含任何 API 密钥。下面只保留搜索框和列表的位置，不会把编造的影片当成真的放上来。</p>
+  <form class="search-bar" id="movie-search" style="margin-top:16px" role="search">
+    <input id="et-search" type="search" placeholder="搜索电影..." aria-label="搜索电影">
+    <button type="submit">搜索</button>
+  </form>
+  <p class="toast" id="movie-toast" role="status"></p>
+  <div class="movie-grid" id="movie-grid">
+    <div class="empty">列表为空。未接入 TMDB，这里没有影片海报、片名或评分。</div>
+  </div>
+  <section aria-label="电影详情在应用中的版式">
+    <h2>应用中的详情版式</h2>
+    <p class="lede">点进一部电影后，应用会显示背景图、海报、标题、宣传语、评分、上映日期、时长和剧情简介。这些字段依赖接口，本站留空，不填示例数据。</p>
+    <div class="detail-skeleton">
+      <div class="ph" aria-hidden="true"></div>
+      <div>
+        <p class="meta">标题 —</p>
+        <p class="meta">宣传语 —</p>
+        <p class="meta">评分 —</p>
+        <p class="meta">上映 —</p>
+        <p class="meta">时长 —</p>
+        <p class="meta">剧情简介 —</p>
+      </div>
+    </div>
+  </section>
+</div></main>
+<script src="js/movies.js"></script>
+<footer>
+  <div class="wrap">最终幻想7 资料站 · 内容来自 zzhx Android 应用中的文案与图片 · 不含 API 密钥</div>
+</footer>
+</body>
+</html>

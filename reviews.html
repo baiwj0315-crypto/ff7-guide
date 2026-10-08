@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>游戏评价 · 最终幻想7</title>
+  <meta name="description" content="最终幻想7 游戏评价，保存在浏览器本地。">
+  <link rel="icon" href="images/tb.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="images/tb.jpg" alt="">最终幻想7</a>
+    <nav aria-label="主导航"><a href="index.html">首页</a><a href="intro.html">游戏简介</a><a href="roles.html">角色设定</a><a href="actors.html">角色背景</a><a href="reviews.html" aria-current="page">游戏评价</a><a href="movies.html">热门电影</a></nav>
+  </div>
+</header>
+
+<main id="main"><div class="wrap">
+  <h1 class="page-title">游戏评价</h1>
+  <p class="lede">评价只存在这台浏览器的 localStorage 里，没有服务器。清空站点数据后，会回到最初那条评价。</p>
+  <div id="review-list" aria-live="polite"></div>
+  <div class="actions">
+    <button type="button" id="btn-add">我要写评论</button>
+  </div>
+  <form class="form" id="review-form" hidden>
+    <label for="author">发布人</label>
+    <input id="author" name="author" type="text" autocomplete="nickname" maxlength="40">
+    <label for="content">评价内容</label>
+    <textarea id="content" name="content" maxlength="500"></textarea>
+    <div class="actions">
+      <button type="submit" id="btn-enter">确定</button>
+      <button type="button" class="ghost" id="btn-cancel">取消</button>
+    </div>
+    <p class="toast" id="toast" role="status"></p>
+  </form>
+</div></main>
+<script src="js/reviews.js"></script>
+<footer>
+  <div class="wrap">最终幻想7 资料站 · 内容来自 zzhx Android 应用中的文案与图片 · 不含 API 密钥</div>
+</footer>
+</body>
+</html>
